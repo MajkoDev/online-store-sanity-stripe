@@ -12,7 +12,6 @@ interface Props {
 }
 
 export default async function Page({ params }: Props) {
-
   const product = await client.fetch<SanityProduct>(
     groq`*[_type == "product" && slug.current == "${params.slug}"][0]{
       _id,
@@ -31,7 +30,6 @@ export default async function Page({ params }: Props) {
     }`
   )
 
-
   return (
     <main className="mx-auto max-w-5xl sm:px-6 sm:pt-16 lg:px-8">
       <div className="mx-auto max-w-2xl lg:max-w-none">
@@ -39,6 +37,7 @@ export default async function Page({ params }: Props) {
         <div className="pb-20 lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-12">
           {/* Product gallery */}
           {/* Product info */}
+          <ProductInfo product={product} />
         </div>
       </div>
     </main>
