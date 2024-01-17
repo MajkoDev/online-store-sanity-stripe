@@ -6,6 +6,7 @@ import { SanityProduct } from "@/config/inventory"
 import { siteConfig } from "@/config/site"
 import { seedSanityData } from "@/lib/seed"
 import { cn } from "@/lib/utils"
+
 import { ProductFilters } from "@/components/product-filters"
 import { ProductGrid } from "@/components/product-grid"
 import { ProductSort } from "@/components/product-sort"
