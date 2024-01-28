@@ -10,6 +10,7 @@ import { Input } from "@/components/ui/input"
 import { MainNav } from "@/components/main-nav"
 import { ThemeToggle } from "@/components/theme-toggle"
 
+
 export function SiteHeader() {
   const pathname = usePathname()
   const router = useRouter()

@@ -13,6 +13,7 @@ interface Props {
   products: SanityProduct[]
 }
 
+
 export function ProductGrid({ products }: Props) {
   if (products.length === 0) {
     return (
